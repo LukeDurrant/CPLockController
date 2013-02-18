@@ -52,6 +52,7 @@ CPLockControllerTypeSet
 @property (nonatomic, retain) NSString *prompt;
 @property (nonatomic) BOOL hideCode;
 
+- (id)initWithStyle:(CPLockControllerStyle)theStyle;
 - (void)setTitle:(NSString *)title;
 
 @end

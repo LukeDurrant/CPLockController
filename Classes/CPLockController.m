@@ -75,7 +75,7 @@
 
 - (void)setupSubviews {
 
-	self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+	self.view.backgroundColor = [UIColor whiteColor];
 
 	//prompt
 	promptLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 85, 320, 25)];
@@ -89,8 +89,8 @@
 	
 	//main prompt
 	promptLabel.text = prompt;
-	promptLabel.textAlignment = UITextAlignmentCenter;
-	promptLabel.backgroundColor = [UIColor clearColor];
+	promptLabel.textAlignment = NSTextAlignmentCenter;
+	promptLabel.backgroundColor = [UIColor whiteColor];
 	promptLabel.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.50];
 	promptLabel.font = [UIFont systemFontOfSize:[UIFont labelFontSize]];
     promptLabel.shadowOffset = CGSizeMake(0, -0.75);
@@ -99,8 +99,8 @@
 
 	//sub prompt- used for errors
 	subPromptLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 190, 320, 25)];
-	subPromptLabel.textAlignment = UITextAlignmentCenter;
-	subPromptLabel.backgroundColor = [UIColor clearColor];
+	subPromptLabel.textAlignment = NSTextAlignmentCenter;
+	subPromptLabel.backgroundColor = [UIColor whiteColor];
 	subPromptLabel.textColor = [UIColor colorWithRed:0.318 green:0.345 blue:0.416 alpha:1.000];;
 	subPromptLabel.font = [UIFont systemFontOfSize:14];
 	[self.view addSubview:subPromptLabel];
@@ -155,7 +155,7 @@
 	//field1.enabled = NO;
 	field1.secureTextEntry = self.hideCode;
 	field1.font = [UIFont systemFontOfSize:fontsize];
-	field1.textAlignment = UITextAlignmentCenter;
+	field1.textAlignment = NSTextAlignmentCenter;
 	field1.tag = 0;
 	[self.view addSubview:field1];
 	
@@ -166,7 +166,7 @@
 	field2.enabled = NO;
 	field2.secureTextEntry = self.hideCode;	
 	field2.font = [UIFont systemFontOfSize:fontsize];	
-	field2.textAlignment = UITextAlignmentCenter;
+	field2.textAlignment = NSTextAlignmentCenter;
 	field2.tag = 2;
 	[self.view addSubview:field2];
 
@@ -176,7 +176,7 @@
 	field3.enabled = NO;
 	field3.secureTextEntry = self.hideCode;
 	field3.font = [UIFont systemFontOfSize:fontsize];	
-	field3.textAlignment = UITextAlignmentCenter;	
+	field3.textAlignment = NSTextAlignmentCenter;	
 	field3.tag = 3;
 	[self.view addSubview:field3];
 	
@@ -186,7 +186,7 @@
 	field4.enabled = NO;
 	field4.secureTextEntry = self.hideCode;
 	field4.font = [UIFont systemFontOfSize:fontsize];	
-	field4.textAlignment = UITextAlignmentCenter;	
+	field4.textAlignment = NSTextAlignmentCenter;	
 	field4.tag = 4;
 	[self.view addSubview:field4];	
 	
@@ -198,8 +198,6 @@
 	hiddenField.delegate = self;	
 	[self.view addSubview:hiddenField];
 	
-	
-
 	
 }
 
