@@ -14,17 +14,18 @@
 
 - (IBAction)changePasscode:(id)sender {
 	CPLockController *lockController = [[CPLockController alloc]initWithStyle:CPLockControllerTypeSet];
-	
 	lockController.delegate = self;
-
+    
 	[self presentModalViewController:lockController animated:YES];
 }
 
 - (IBAction)requirePasscode:(id)sender {
+
 	CPLockController *lockController = [[CPLockController alloc]initWithStyle:CPLockControllerTypeAuth];
 	lockController.passcode = @"1234";
 	lockController.delegate = self;
 	lockController.title = @"Passcode is 1234";
+    
 	[self presentModalViewController:lockController animated:YES];
 }
 
